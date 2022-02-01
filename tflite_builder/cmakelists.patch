@@ -1,0 +1,11 @@
+--- tensorflow_src/tensorflow/lite/CMakeLists.txt
++++ tensorflow_src/tensorflow/lite/CMakeLists.txt
+@@ -556,6 +556,7 @@
+ 
+ target_link_libraries(_pywrap_tensorflow_interpreter_wrapper
+   tensorflow-lite
++  atomic
+   ${CMAKE_DL_LIBS}
+ )
+ target_compile_options(_pywrap_tensorflow_interpreter_wrapper
+
